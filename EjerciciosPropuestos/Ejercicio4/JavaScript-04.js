@@ -1,7 +1,7 @@
 
 
 function extraerCodigo(url) {
-            // Buscar el patrón del código de sesión después de la última /
+    // Buscar el patrón del código de sesión después de la última /
     var patron = /\/([a-z0-9-]+)$/i;
     var coincidencia = url.match(patron);
     if (coincidencia && coincidencia.length > 1) {
