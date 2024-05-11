@@ -1,8 +1,28 @@
 <!DOCTYPE html>
-<html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de Suma de Valores</title>
+    <link rel="stylesheet" href="Estilos.css">
+</head>
 <body>
+    <h1>Ejercicio 5: Wilson Turpo</h1>
+    <h2>Calculadora de Suma de Valores</h2>
+    <form id="configForm">
+        <label for="numValues">Ingrese la cantidad de valores:</label>
+        <input type="number" id="numValues" name="numValues" min="1" required>
+        <button type="submit">Generar Tabla</button>
+    </form>
 
+    <div id="tableContainer" style="display: none;">
+        <table id="valueTable"></table>
+        <button onclick="calcularSuma()">Calcular Suma</button>
+    </div>
 
+    <div id="resultado" style="display: none; margin-top: 20px;"></div>
+
+    <script src="JavaScript-05.js"></script>
 
 </body>
 </html>
