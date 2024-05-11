@@ -19,7 +19,6 @@ function arrayGenerator(n, min, max) {
     return a;
 }
 
-
 function generar() {
     const cantidad = parseInt(document.getElementById('cantidad').value);
     const minimo = parseInt(document.getElementById('minimo').value);

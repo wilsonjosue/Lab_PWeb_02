@@ -4,7 +4,9 @@
    dados (incluyendo min, pero no max).
  * Usa Math.random(), 
    ¿Cómo se puede resolver este warning?
+    Se puede resolver añadiendo una excepcion para controlar los errores.
    ¿Puede modificar la solución usando map?
+    Si, de la siguiente manera:() => Math.ceil(Math.random() * (max - min) + min));
 */
 
 function arrayGenerator(n, min, max) {
@@ -28,3 +30,4 @@ function generar2() {
         alert(error.message);
     }
 }
+
