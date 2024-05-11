@@ -7,7 +7,7 @@ function obtenerDiaSemana(numeroDia) {
 // Obtener la fecha actual
 const fechaActual = new Date();
 // Obtener el número de día de la semana (0 para Domingo, 1 para Lunes, etc.)
-const numeroDia = fechaActual.getDay();
+let numeroDia = fechaActual.getDay();
 // Obtener el nombre del día de la semana
 let nombreDia = obtenerDiaSemana(numeroDia);
 
