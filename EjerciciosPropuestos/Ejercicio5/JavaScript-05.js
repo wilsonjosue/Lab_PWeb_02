@@ -37,12 +37,12 @@ function calcularSuma() {
     let suma = 0;
 
     for (let i = 0; i < rows.length; i++) {
-        let cell = rows[i].getElementsByTagName('td')[0];
-        suma += parseInt(cell.textContent);
+        let cells = rows[i].getElementsByTagName('td'); // Obtener todas las celdas de la fila
+        if (cells.length > 0) { // Verificar si hay celdas en la fila
+            suma += parseInt(cells[0].textContent); // Sumar el contenido de la primera celda
+        }
     }
 
-        document.getElementById('resultado').textContent = 'La suma de todos los valores es: ' + suma;
-        document.getElementById('resultado').style.display = 'block';
+    document.getElementById('resultado').textContent = 'La suma de todos los valores es: ' + suma;
+    document.getElementById('resultado').style.display = 'block';
 }
-
-
