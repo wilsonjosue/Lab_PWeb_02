@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+<body>
+
+<h2>JavaScript permite</h2>
+
+<p>Se permite redeclarar una variable con <b>let</b>, en otro ámbito, o en otro bloque:</p>
+<p>let x = 2;   // Allowed
+
+{
+  let x = 3;   // Allowed
+}
+
+{
+  let x = 4;   // Allowed
+}</p>
+<p id="demo"></p>
+
+<script>
+let x = 2;   // Allowed
+
+{
+  let x = 3;   // Allowed
+}
+
+{
+  let x = 4;   // Allowed
+}
+document.getElementById("demo").innerHTML = x;
+</script>
+
+</body>
+</html>
