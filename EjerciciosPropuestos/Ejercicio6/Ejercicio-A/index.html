@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cambiar tamaño y color de texto</title>
+    <style>
+      #text {
+        font-size: 16px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+    <h1 id="text">Wilson Turpo</h1>
+    <h2>¿Qué puede hacer JavaScript?</h2>
+    <p>JavaScript puede cambiar los valores de los atributos HTML.</p>
+    <p>En este caso, JavaScript cambia el valor del atributo src (fuente) de una imagen.gif</p>
+    <button onclick="cambiarTamaño('aumentar')">Aumentar tamaño</button>
+    <button onclick="cambiarTamaño('disminuir')">Disminuir tamaño</button>
+    <button onclick="cambiarColor('negro')">Negro</button>
+    <button onclick="cambiarColor('rojo')">Rojo</button>
+    <button onclick="cambiarColor('azul')">Azul</button>
+    <script>
+      function cambiarTamaño(accion) {
+        var texto = document.getElementById('text');
+        var tamañoActual = window.getComputedStyle(texto, null).getPropertyValue('font-size');
+        tamañoActual = parseFloat(tamañoActual);
+        if (accion === 'aumentar') {
+          texto.style.fontSize = (tamañoActual + 2) + 'px';
+        } else if (accion === 'disminuir') {
+          texto.style.fontSize = (tamañoActual - 2) + 'px';
+        }
+      }
+
+      function cambiarColor(color) {
+        var texto = document.getElementById('text');
+        texto.style.color = color;
+      }
+    </script>
+  </body>
+</html>
