@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Cambiar tamaño y color de texto</title>
+    <style>
+      #text {
+        font-size: 16px;
+        color: black;
+      }
+    </style>
+  </head>
+  <body>
+
+    <h1>¿Qué puede hacer JavaScript?</h1>
+    <p>JavaScript puede cambiar los valores de los atributos HTML.</p>
+    <h2 id="text">Texto que se va a cambiar de tamaño</h2>
+
+    <!--Se crean los botones para cambiar tamaño-->
+
+    <button onclick="cambiarTamaño('aumentar')">Aumentar tamaño</button>
+    <button onclick="cambiarTamaño('disminuir')">Disminuir tamaño</button>
+
+    <!-- Nuevo texto para cambiar color -->
+    <h3 id="textoColor">Texto cambiara de color</h3>
+
+    <button onclick="cambiarColor('blue')">Azul</button>
+    <button onclick="cambiarColor('orange')">Anaranjado</button>
+
+    <!-- Script para cambiar tamaño y color -->
+    <script src="FunTamañoColor.js"></script>
+    
+  </body>
+</html>
