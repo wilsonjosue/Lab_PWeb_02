@@ -1,5 +1,5 @@
- // Función para cambiar tamaño del texto
- function cambiarTamaño(accion) {
+// Función para cambiar tamaño del texto
+function cambiarTamaño(accion) {
     var texto = document.getElementById('text');
     var tamañoActual = window.getComputedStyle(texto, null).getPropertyValue('font-size');
     tamañoActual = parseFloat(tamañoActual);
@@ -10,7 +10,7 @@
     }
 }
 
-// Función para cambiar tamaño del texto
+// Función para cambiar color del texto
 function cambiarColor(color) {
     var texto = document.getElementById('textoColor');
     texto.style.color = color;
