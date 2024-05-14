@@ -11,9 +11,9 @@
   </head>
   <body>
 
-    <h1 id="text">Texto que se va a cambiar de tamaño</h1>
-    <h2>¿Qué puede hacer JavaScript?</h2>
+    <h1>¿Qué puede hacer JavaScript?</h1>
     <p>JavaScript puede cambiar los valores de los atributos HTML.</p>
+    <h2 id="text">Texto que se va a cambiar de tamaño</h2>
 
     <!--Se crean los botones para cambiar tamaño-->
 
@@ -23,7 +23,7 @@
     <!-- Nuevo texto para cambiar color -->
     <h3 id="textoColor">Texto cambiara de color</h3>
 
-    <button onclick="cambiarColor('azul')">Azul</button>
+    <button onclick="cambiarColor('blue')">Azul</button>
     <button onclick="cambiarColor('orange')">Anaranjado</button>
 
     <!-- Script para cambiar tamaño y color -->
@@ -40,7 +40,7 @@
             }
         }
 
-        // Función para cambiar tamaño del texto
+        // Función para cambiar color del texto
         function cambiarColor(color) {
             var texto = document.getElementById('textoColor');
             texto.style.color = color;
