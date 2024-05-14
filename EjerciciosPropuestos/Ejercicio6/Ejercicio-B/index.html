@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora</title>
+    <link rel="stylesheet" href="estilos.css">
+</head>
+<body>
+    <h1>Calculadora</h1>
+    <div class="calculator">
+        <input type="number" id="num1">
+        <select id="operator">
+            <option value="+">Suma</option>
+            <option value="-">Resta</option>
+            <option value="*">Multiplicación</option>
+            <option value="/">División</option>
+            <option value="%">Módulo</option>
+            <option value="&">AND Bit a Bit</option>
+            <option value="|">OR Bit a Bit</option>
+            <option value="^">XOR Bit a Bit</option>
+        </select>
+        <input type="number" id="num2">
+        <button onclick="calculate()">Calcular</button>
+        <div id="result"></div>
+    </div>
+
+    <script src="scriptFuncion.js"></script>
+</body>
+</html>
