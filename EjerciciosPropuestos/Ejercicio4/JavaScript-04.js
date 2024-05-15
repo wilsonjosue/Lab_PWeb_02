@@ -1,5 +1,3 @@
-
-
 function extraerCodigo(url) {
     // Buscar el patrón del código de sesión después de la última /
     var patron = /\/([a-z0-9-]+)$/i;
