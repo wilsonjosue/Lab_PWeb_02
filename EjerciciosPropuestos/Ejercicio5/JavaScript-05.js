@@ -18,11 +18,11 @@ function generarTabla() {
         td.textContent = value;
         tr.appendChild(td);
         tbody.appendChild(tr);
-        }
+    }
 
         table.appendChild(tbody);
         document.getElementById('tableContainer').style.display = 'block';
-    }
+}
 
 //Se puede acceder para configurara y crear una tabla.
 document.getElementById('configForm').addEventListener('submit', function(event) {

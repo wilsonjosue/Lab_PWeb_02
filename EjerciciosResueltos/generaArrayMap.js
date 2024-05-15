@@ -10,12 +10,12 @@
 */
 
 function arrayGenerator(n, min, max) {
-        if (min >= max) {
-            throw new Error("min debe ser menor que max");
-        }
-    
-        return Array.from({ length: n }, () => Math.ceil(Math.random() * (max - min) + min));
+    if (min >= max) {
+        throw new Error("min debe ser menor que max");
     }
+    
+    return Array.from({ length: n }, () => Math.ceil(Math.random() * (max - min) + min));
+}
     
 function generar2() {
     const cantidad = parseInt(document.getElementById('cantidad').value);
