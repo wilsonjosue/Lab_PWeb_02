@@ -1,4 +1,3 @@
-
 function generarTabla() {
     let numValues = parseInt(document.getElementById('numValues').value);
     let table = document.getElementById('valueTable');
